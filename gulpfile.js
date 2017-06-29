@@ -25,9 +25,17 @@ elixir(function(mix) {
     // Font awesome
     mix.copy('vendor/bower_components/gentelella/vendors/font-awesome/css/font-awesome.min.css', 'public/css/font-awesome.min.css');
 
-    // Gentelella
-    mix.copy('vendor/bower_components/gentelella/build/css/custom.min.css', 'public/css/gentelella.min.css');
+    mix.styles([
+        'custom.min.css',
+        'my-style.css'
+    ], null, 'vendor/bower_components/gentelella/build/css/');
 
+    //// Gentelella
+    //mix.copy('vendor/bower_components/gentelella/build/css/custom.min.css', 'public/css/gentelella.min.css');
+    //
+    //// my-style
+    //mix.copy('vendor/bower_components/gentelella/build/css/my-style.css', 'public/css/my-style.css');
+    //
     /****************/
     /* Copy Scripts */
     /****************/
@@ -40,6 +48,12 @@ elixir(function(mix) {
 
     // Gentelella
     mix.copy('vendor/bower_components/gentelella/build/js/custom.min.js', 'public/js/gentelella.min.js');
+
+    // Chart
+    mix.copy('vendor/bower_components/gentelella/vendors/Chart.js/dist/Chart.min.js', 'public/js/Chart.min.js');
+
+    // my-scripts
+    mix.copy('vendor/bower_components/gentelella/build/js/my-scripts.js', 'public/js/gentelella.min.js');
 
     /**************/
     /* Copy Fonts */
