@@ -17,8 +17,13 @@
         <link href="{{ asset("css/font-awesome.min.css") }}" rel="stylesheet">
         <!-- Custom Theme Style -->
         <link href="{{ asset("css/gentelella.min.css") }}" rel="stylesheet">
+        <!-- nprogress -->
+        <link href="{{ asset("css/nprogress.css") }}" rel="stylesheet">
 
         @stack('stylesheets')
+
+        <!-- jQuery -->
+        <script src="{{ asset("js/jquery.min.js") }}"></script>
 
     </head>
 
@@ -35,14 +40,18 @@
             </div>
         </div>
 
-        <!-- jQuery -->
-        <script src="{{ asset("js/jquery.min.js") }}"></script>
+        @stack('scripts')
+
         <!-- Bootstrap -->
         <script src="{{ asset("js/bootstrap.min.js") }}"></script>
         <!-- Custom Theme Scripts -->
         <script src="{{ asset("js/gentelella.min.js") }}"></script>
-
-        @stack('scripts')
+        <!-- Chart.js -->
+        <script src="{{ asset("js/Chart.min.js") }}"></script>
+        <!-- fastclick.js -->
+        <script src="{{ asset("js/fastclick.js") }}"></script>
+        <!-- nprogress.js -->
+        <script src="{{ asset("js/Chart.min.js") }}"></script>
 
     </body>
 </html>

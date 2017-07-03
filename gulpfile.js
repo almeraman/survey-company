@@ -28,6 +28,8 @@ elixir(function(mix) {
     // Gentelella
     mix.copy('vendor/bower_components/gentelella/build/css/custom.min.css', 'public/css/gentelella.min.css');
 
+    // nprogress style
+    mix.copy('vendor/bower_components/gentelella/vendors/nprogress/nprogress.css', 'public/css/nprogress.css');
     /****************/
     /* Copy Scripts */
     /****************/
@@ -40,6 +42,15 @@ elixir(function(mix) {
 
     // Gentelella
     mix.copy('vendor/bower_components/gentelella/build/js/custom.min.js', 'public/js/gentelella.min.js');
+
+    // Chart
+    mix.copy('vendor/bower_components/gentelella/vendors/Chart.js/dist/Chart.min.js', 'public/js/Chart.min.js');
+
+    // fastclick
+    mix.copy('vendor/bower_components/gentelella/vendors/fastclick/lib/fastclick.js', 'public/js/fastclick.js');
+
+    // nprogress
+    mix.copy('vendor/bower_components/gentelella/vendors/nprogress/nprogress.js', 'public/js/nprogress.js');
 
     /**************/
     /* Copy Fonts */
