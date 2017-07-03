@@ -22,3 +22,10 @@
     </footer>
     <!-- /footer content -->
 @endsection
+@push('scripts')
+<script type="text/javascript">
+    $(function() {
+       // NProgress.start();
+    });
+</script>
+@endpush

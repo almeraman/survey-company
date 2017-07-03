@@ -51,7 +51,7 @@
         <!-- fastclick.js -->
         <script src="{{ asset("js/fastclick.js") }}"></script>
         <!-- nprogress.js -->
-        <script src="{{ asset("js/Chart.min.js") }}"></script>
+        <script src="{{ asset("js/nprogress.js") }}"></script>
 
     </body>
 </html>
